@@ -8,7 +8,7 @@
 
 [Arjun Ankad][linkedin-urlar]
 [Susan Hamilton][linkedin-urlsh]
-[Hudson Miller][linkedin-urlp]
+[Hudson Miller][linkedin-urhm]
 [Priyadarsi Mishra][linkedin-urlp]
 
 ## Purpose
@@ -54,6 +54,7 @@ other Content made available to you through the Site.
 
 [cloud-provider-url]: https://wbshopping.herokuapp.com
 
-[linkedin-urlsh]: https://www.linkedin.com/in/danielbtrinh
+[linkedin-urlsh]: www.linkedin.com/in/susan-hamilton-62191222b
 [linkedin-urlp]: https://www.linkedin.com/in/priyadarsi-mishra/
 [linkedin-urlar]: https://www.linkedin.com/in/arjun-ankad-428b261b8/
+[linkedin-urlhm]: (https://github.com/hdsn888)https://github.com/hdsn888

@@ -1,30 +1,21 @@
-# QuantFrog
+# Slides Utilized to Summarize and Notate
 [![Frontend][Frontend-image]][Frontend-url]
 [![Backend][Backend-image]][Backend-url]
 
-> A project to allow access to quick data-driven predictions of quarterly earnings call for security trading.
+> A project to take the contents of a pdf, transcribe them, and output a summary of the inputted pdf as a new page on Notion.
 ---
 ## Authors
 
-[Daniel Trinh][linkedin-urldt]
-[Priyadarsi Mishra][linkedin-urlp]
 [Arjun Ankad][linkedin-urlar]
-
+[Susan Hamilton][linkedin-urlsh]
+[Hudson Miller][linkedin-urlp]
+[Priyadarsi Mishra][linkedin-urlp]
 
 ## Purpose
 
-This project was designed to aid with simplicity in mind. It is designed to provide access to 
-earnings call predictions for a given security. Of course, **NO USER SHOULD**
-**TAKE THIS RECOMMENDATION AS SOUND FINANCIAL ADVICE. THIS IS FOR EDUCATIONAL PURPOSES.**
-We were inspired to create this project because we saw a need to make quantitative trading analysis more 
-accessible. And throughout the development of this project, we experienced how difficult it
-is to really get software deployed. We originally planned to have a complicated backend 
-setup but were greatly limited by the available free APIs and easy to integrate databases. 
-We ended up building the project using React for the easier Frontend development and a Python 
-LSTM model for the intelligence behind the "advice". However, we ran into issues in connecting
-the two. Originally, we had not structured the Python file in a way where it could be invoked 
-by the frontend, so we needed to restructure it. But it did end up working. However, we 
-do believe there is of course more work to do!
+This project was designed to aid with simplicity in mind. It was created with the intent of generating concise summaries of the important information from inputted data and presenting them in a digestible manner. This project has applications in education, as students often desire shortened versions of class material like lectures or notes they took. The project was built utilizing Hugging Face models and BART to create the summaries and Notion API and Python for the creation of Notion pages. In the future, we hope to implement a login button so that users can easily connect their Notion account to our website, allowing for the easy transfer of the generated summaries to their accounts.
+
+
 
 
 ## Disclaimer
@@ -42,18 +33,14 @@ agree not to hold the Authors, its affiliates or any third party service provide
 other Content made available to you through the Site.
 
 
-## Deployment
-
-Currently, the project is deployed on Vercel. This may change in the future. 
 
 
 ## Built With
 
-* [Vercel](https://vercel.com/) - Frontend Hosting
-* [Heroku ](https://devcenter.heroku.com/) - To deploy on Heroku
 * [React JS](https://react.dev/) - Frontend Framework
+* [Hugging Face](https://huggingface.co/) - Summary Transcription
 * [Python 3](https://www.python.org/) - Backend Language
-* [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Backend Framework
+* [Notion API](https://developers.notion.com/) - Backend Framework
 
 
 ---
@@ -67,6 +54,6 @@ Currently, the project is deployed on Vercel. This may change in the future.
 
 [cloud-provider-url]: https://wbshopping.herokuapp.com
 
-[linkedin-urldt]: https://www.linkedin.com/in/danielbtrinh
+[linkedin-urlsh]: https://www.linkedin.com/in/danielbtrinh
 [linkedin-urlp]: https://www.linkedin.com/in/priyadarsi-mishra/
 [linkedin-urlar]: https://www.linkedin.com/in/arjun-ankad-428b261b8/

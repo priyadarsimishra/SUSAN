@@ -1,6 +1,4 @@
-# Slides Utilized to Summarize and Notate
-/*[![Frontend][Frontend-image]][Frontend-url]
-[![Backend][Backend-image]][Backend-url]*/
+# Slides Utilized to Summarize And Notate
 
 > A project to take the contents of a pdf, transcribe them, and output a summary of the inputted pdf as a new page on Notion.
 ---

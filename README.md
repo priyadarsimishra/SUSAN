@@ -11,7 +11,7 @@
 
 ## Purpose
 
-This project was designed to aid with simplicity in mind. It was created with the intent of generating concise summaries of the important information from inputted data and presenting them in a digestible manner. This project has applications in education, as students often desire shortened versions of class material like lectures or notes they took. The project was built utilizing Hugging Face models and BART to create the summaries and Notion API and Python for the creation of Notion pages. In the future, we hope to implement a login button so that users can easily connect their Notion account to our website, allowing for the easy transfer of the generated summaries to their accounts.
+This project was designed to aid with simplicity in mind. It was created with the intent of generating concise summaries of the important information from inputted data and presenting them in a digestible manner. This project has applications in education, as students often desire shortened versions of class material like lectures or notes they took. The project was built utilizing Hugging Face models and BART to create the summaries and Notion API and Python for the creation of Notion pages. We also used Unsplash API to generate random images relating to the pdf content for the Notion page. In the future, we hope to implement a login button so that users can easily connect their Notion account to our website, allowing for the easy transfer of the generated summaries to their accounts.
 
 
 
@@ -39,6 +39,7 @@ other Content made available to you through the Site.
 * [Hugging Face](https://huggingface.co/) - Summary Transcription
 * [Python 3](https://www.python.org/) - Backend Language
 * [Notion API](https://developers.notion.com/) - Backend Framework
+* [Unsplash API](https://unsplash.com/developers) - Image Generation
 
 
 ---

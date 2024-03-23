@@ -3,12 +3,15 @@ import './index.css';
 import pdfToText from "react-pdftotext";
 import Logo from "./images/logo.png";
 // import Background from "./images/back.png";
+import { UploadOutlined } from '@ant-design/icons';
+
+import { Button, message, Upload } from 'antd';
 
 function App() {
     const [text, setText] = useState("")
 
     function extractText(event) {
-        const file = event.target.files[0]
+        const file = event
         pdfToText(file)
             .then(text => {
               // setText(text)
@@ -30,6 +33,29 @@ function App() {
             .catch(error => console.error("Failed to extract text from pdf"))
     }
 
+    const props = {
+      name: 'file',
+      action: 'https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188',
+      headers: {
+        authorization: 'authorization-text',
+      },
+      onChange(info) {
+        if (info.file.status !== 'uploading') {
+          console.log(info.file, info.fileList);
+          extractText(info.file.originFileObj);
+        }
+        // console.log(info.file);
+
+        info.file.status = 'done'
+        if (info.file.status === 'done') {
+          message.success(`${info.file.name} file uploaded successfully`);
+        } else if (info.file.status === 'error') {
+          message.error(`${info.file.name} file upload failed.`);
+        }
+      },
+    };
+    
+
     return (
         <div className="backgroundImage">
             <div>
@@ -39,12 +65,17 @@ function App() {
             <div className="header">
                 <h1 className="h1"> Transforming Slides and PDFs into Summarized Notion Pages: </h1>
                 <h1 className="h2"> SUSAN - Your Ultimate Productivity Companion </h1>           
-                <input className="file" type="file" accept="application/pdf" style={{
+                {/* <input className="file" type="file" accept="application/pdf" onChange={extractText} style={{
                     border: '2px solid #2aff78',
                     borderRadius: '0.6rem',
                     padding: '10px',
-                    fontSize: '17px' /* Optional: Adjust the font size as needed */
-                }}/>
+                    fontSize: '17px' 
+                }}/> */}
+                <div className="dragger-div">
+                  <Upload className="dragger" {...props}>
+                    <Button icon={<UploadOutlined />}>Click to Upload</Button>
+                  </Upload>
+                </div>
             </div>
             <svg className="header-lines" width="1331" height="409" viewBox="0 0 1731 409" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className="line line--blue" d="M-210.326 -327C-210.326 -327 -38.3196 165.621 334.574 120.5C707.468 75.3784 868.584 134 1001.57 213.59C1134.56 293.179 1150.57 266.276 1217.45 222.385" stroke="#3B42B6" strokeLinecap="round" strokeDasharray="1685.669678" strokeDashoffset="0" style={{ opacity: 1, visibility: 'inherit' }}></path>

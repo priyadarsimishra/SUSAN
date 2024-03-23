@@ -11,18 +11,18 @@ body {
   background-image: url("./images/back.png");
   background-size: auto;
   background-position: center;
-  height: 740px;
+  height: 100vh;
 }
 
 .logo {
   height: 70px;
-  margin-left: 45%;
+  margin-left: 46.5vw;
+  margin-right: 46.5vw;
   padding-top: 25px;
 }
 
-
 .header {
-  margin-top: 50px;
+  margin-top: 10vh;
   max-width: 1400px;
   height: 450px;
   margin-left: auto;
@@ -58,4 +58,12 @@ body {
 
 .header-lines {
   margin-top: -270px;
+}
+
+.dragger {
+  margin-left: 37vw;
+}
+
+.dragger-div{
+  margin-top: 10vh;
 }

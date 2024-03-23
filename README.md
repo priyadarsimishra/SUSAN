@@ -6,7 +6,7 @@
 
 [Arjun Ankad][linkedin-urlar]
 [Susan Hamilton][linkedin-urlsh]
-[Hudson Miller][linkedin-urhm]
+[Hudson Miller][linkedin-urlhm]
 [Priyadarsi Mishra][linkedin-urlp]
 
 ## Purpose
